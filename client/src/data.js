@@ -27,16 +27,19 @@ export const categories = [
     id: 1,
     title: "DooDads",
     img: "https://images.unsplash.com/photo-1585508033002-1ff8b3fee7e1",
+    cat: "man",
   },
   {
     id: 2,
     title: "Fashion",
     img: "https://images.unsplash.com/photo-1506918894064-3f419c6f2209",
+    cat: "edible",
   },
   {
     id: 3,
     title: "Hard goods",
     img: "https://images.unsplash.com/photo-1587925420649-89760ff7baab",
+    cat: "hard good",
   },
 ];
 
