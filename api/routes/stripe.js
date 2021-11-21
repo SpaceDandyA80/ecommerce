@@ -1,8 +1,9 @@
 const router = require("express").Router();
 // const stripe = require("stripe")(process.env.STRIPE_KEY);
-const KEY = process.env.REACT_APP_SECRET_STRIPE_KEY;
-console.log(KEY);
+const KEY = process.env.STRIPE_SECRET_KEY_MY;
 const stripe = require("stripe")(KEY);
+
+// console.log(stripe);
 
 router.post("/payment", (req, res) => {
   stripe.charges.create(

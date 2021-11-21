@@ -144,7 +144,7 @@ const Product = () => {
 
   const handleClick = () => {
     //update cart
-    dispatch(addProduct({ product, amount, price: product.price * amount }));
+    dispatch(addProduct({ ...product, amount, color, size }));
   };
   return (
     <Container>

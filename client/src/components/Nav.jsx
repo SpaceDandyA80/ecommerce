@@ -92,11 +92,13 @@ const Nav = () => {
         <Right>
           <MenuItem>Register</MenuItem>
           <MenuItem>Sign In</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={amount} color="primary">
-              <ShoppingCartOutlined />
-            </Badge>
-          </MenuItem>
+          <Link to="/cart">
+            <MenuItem>
+              <Badge badgeContent={amount} color="primary">
+                <ShoppingCartOutlined />
+              </Badge>
+            </MenuItem>
+          </Link>
         </Right>
       </Wrapper>
     </Container>
